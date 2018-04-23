@@ -141,7 +141,7 @@ var DataInit = function () {
     Data.player2 = MakePlayer(MakeRect(4.5, 0, 0.2, 1, [0.5, 0, 0.5], 2), 73, 75);
 
     Data.ball = {};
-    Data.ball.gfx = MakeRect(0, 0, 0.2, 0.2, [0, 0.5, 0.5], 1);
+    Data.ball.gfx = MakeRect(0, 0, 0.2, 0.2, [0, 0.5, 0.5], 2);
     Data.ball.x = 0;
     Data.ball.y = 0;
     Data.ball.dir = [1, 1];
