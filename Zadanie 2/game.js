@@ -150,17 +150,17 @@ var DataInit = function () {
     Data.ball.speed = 0.006;
     Data.dynamicObjects.push(Data.ball.gfx);
 
-    Data.staticObjects.push(MakeRect(0, 2, 9.5, 0.1, [0.3, 0.3, 0.3], 3));
-    Data.staticObjects.push(MakeRect(0, -2, 9.5, 0.1, [0.3, 0.3, 0.3], 3));
+    Data.staticObjects.push(MakeRect(0, 2, 9.5, 0.1, [0.3, 0.3, 0.3], 2));
+    Data.staticObjects.push(MakeRect(0, -2, 9.5, 0.1, [0.3, 0.3, 0.3], 2));
 
     var i;
     var minMax = 6;
     var density = 1.0 / 3.0;
     for (i = -minMax; i <= minMax; i = i + 1) {
-        Data.staticObjects.push(MakeRect(0, i * density, 0.1, 0.1, [0.2, 0.2, 0.2], 4));
+        Data.staticObjects.push(MakeRect(0, i * density, 0.1, 0.1, [0.2, 0.2, 0.2], 3));
     }
 
-    Data.staticObjects.push(MakeRect(0, 0, 9.5, 4, [0.1, 0.0, 0.0], 5));
+    Data.staticObjects.push(MakeRect(0, 0, 9.5, 4, [0.1, 0.0, 0.0], 4));
 };
 
 var MVPInit = function () {
