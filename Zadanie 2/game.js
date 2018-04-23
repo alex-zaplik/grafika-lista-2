@@ -172,7 +172,7 @@ var MVPInit = function () {
     Data.viewMatrix = new Float32Array(16);
     Data.projectionMatrix = new Float32Array(16);
 
-    var ratio = Data.canvas.height / Data.canvas.width;
+    var ratio = Data.canvas.width / Data.canvas.height;
 
     Data.scale = 5;
     mat4.identity(Data.modelMatrix);
@@ -396,7 +396,7 @@ window.onresize = function () {
     if (Data.canvas && Data.gl) {
         Data.canvas.width = window.innerWidth;
         Data.canvas.height = window.innerHeight;
-        var ratio = Data.canvas.height / Data.canvas.width;
+        var ratio = Data.canvas.width / Data.canvas.height;
 
         Data.gl.viewport(0, 0, Data.canvas.width, Data.canvas.height);
 
