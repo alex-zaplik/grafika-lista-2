@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>WebGL Test</title>
+</head>
+<body onload="Init(-1);">
+    <canvas id="game-view" width="800" height="500"></canvas>
+
+    <br />
+
+    <input id="p-click" type="button" value="Points" onclick="Draw(0, 1.0, 0.0, 0.0);" />
+    <input id="ls-click" type="button" value="Line strip" onclick="Draw(1, 1.0, 0.0, 0.0);" />
+    <input id="ll-click" type="button" value="Line loop" onclick="Draw(2, 1.0, 0.0, 0.0);" />
+    <input id="l-click" type="button" value="Lines" onclick="Draw(3, 1.0, 0.0, 0.0);" />
+    <input id="ts-click" type="button" value="Triangle strip" onclick="Draw(4, 1.0, 0.0, 0.0);" />
+    <input id="tf-click" type="button" value="Triangle fan" onclick="Draw(5, 1.0, 0.0, 0.0);" />
+    <input id="t-click" type="button" value="Triangles" onclick="Draw(6, 1.0, 0.0, 0.0);" />
+    <form>
+        <label for="b-val">Value: </label>
+        <input name="number" id="b-val" type="number" min="0" max="5" step="1" value="2" />
+        <input id="b-click" type="button" value="Bind" onclick="Bind(number.value);" />
+    </form>
+
+    <script src="game.js"></script>
+</body>
+</html>
