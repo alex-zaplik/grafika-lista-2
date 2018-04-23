@@ -177,7 +177,7 @@ var MVPInit = function () {
     Data.scale = 5;
     mat4.identity(Data.modelMatrix);
     mat4.lookAt(Data.viewMatrix, [0, 0, -1], [0, 0, 0], [0, 1, 0]);
-    mat4.projection(Data.projectionMatrix, Math.PI / 3.0, ratio, 0.00001, 100);
+    mat4.perspective(Data.projectionMatrix, Math.PI / 3.0, ratio, 0.00001, 100);
     // mat4.ortho(Data.projectionMatrix, Data.scale, -Data.scale, -ratio * Data.scale, ratio * Data.scale, 0, 100);
 
     Data.gl.uniformMatrix4fv(Data.modelLocation, Data.gl.FALSE, Data.modelMatrix);
@@ -401,7 +401,7 @@ window.onresize = function () {
         Data.gl.viewport(0, 0, Data.canvas.width, Data.canvas.height);
 
         Data.projectionMatrix = new Float32Array(16);
-        mat4.projection(Data.projectionMatrix, Math.PI / 3.0, ratio, 0.00001, 100);
+        mat4.perspective(Data.projectionMatrix, Math.PI / 3.0, ratio, 0.00001, 100);
         // mat4.ortho(Data.projectionMatrix, Data.scale, -Data.scale, -ratio * Data.scale, ratio * Data.scale, 0, 100);
         Data.gl.uniformMatrix4fv(Data.projectionLocation, Data.gl.FALSE, Data.projectionMatrix);
 
