@@ -137,8 +137,8 @@ var DataInit = function () {
     Data.staticObjects = [];
     Data.dynamicObjects = [];
 
-    Data.player1 = MakePlayer(MakeRect(-4.5, 0, 0.2, 1, [0.5, 0, 0.5], 2), 87, 83);
-    Data.player2 = MakePlayer(MakeRect(4.5, 0, 0.2, 1, [0.5, 0, 0.5], 2), 73, 75);
+    Data.player1 = MakePlayer(MakeRect(-4.5, 0, 0.2, 1, [0.5, 0, 0.5], 2), 73, 75);
+    Data.player2 = MakePlayer(MakeRect(4.5, 0, 0.2, 1, [0.5, 0, 0.5], 2), 87, 83);
 
     Data.ball = {};
     Data.ball.gfx = MakeRect(0, 0, 0.2, 0.2, [0, 0.5, 0.5], 2);
